@@ -586,6 +586,8 @@
 
     <script>
       function readMore() {
+        var minSize = window.matchMedia("(max-width: 768px)")
+
         var dots = document.getElementById("dots");
         var moreText = document.getElementById("more");
         var btnText = document.getElementById("readMoreBtn");
@@ -595,12 +597,12 @@
           dots.style.display = "inline";
           btnText.innerHTML = "Read more";
           moreText.style.display = "none";
-          showCaseDiv.style.minHeight = "400px";
+          showCaseDiv.style.minHeight = minSize.matches ? "450px" : "400px";
         } else {
           dots.style.display = "none";
           btnText.innerHTML = "Read less";
           moreText.style.display = "inline";
-          showCaseDiv.style.minHeight = "600px";
+          showCaseDiv.style.minHeight = minSize.matches ? "900px" : "700px";
         }
       }
       // Get the current year for the copyright

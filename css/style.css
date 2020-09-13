@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  margin-top: 105px; }
+  margin-top: 95px; }
 
 .navbar {
   box-shadow: 2px 2px 5px #3292a6;
@@ -58,8 +58,15 @@ body {
 
 @media (max-width: 768px) {
   #showcase {
-    min-height: 400px; }
+    min-height: 450px;
+    font-size: 10px; }
+    #showcase p {
+      font-size: 0.99rem; }
     #showcase h1 {
-      font-size: 4rem; }
-  .mb-resp {
-    margin-bottom: 1rem; } }
+      font-size: 2rem; } }
+
+@media (min-width: 360px) {
+  h1 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1rem; } }
