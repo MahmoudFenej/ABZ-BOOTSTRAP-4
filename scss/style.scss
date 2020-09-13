@@ -86,6 +86,16 @@ body {
     }
     font-size: 10px;
   }
+  #authors{
+    .card{
+      margin-bottom: 40px;
+    }
+  }
+  #services{
+    .image-service{
+      margin-bottom: 40px;
+    }
+  }
 }
 @media (min-width: 360px) {
   h1 {

@@ -62,7 +62,11 @@ body {
     #showcase p {
       font-size: 0.99rem; }
     #showcase h1 {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+  #authors .card {
+    margin-bottom: 40px; }
+  #services .image-service {
+    margin-bottom: 40px; } }
 
 @media (min-width: 360px) {
   h1 {
