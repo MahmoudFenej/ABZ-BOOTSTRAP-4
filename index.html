@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>ABZ</title>
+  </head>
+  <body id="home" data-spy="scroll" data-target="#main-nav">
+    <nav
+      class="navbar navbar-expand-sm navbar-light fixed-top py-4"
+      id="main-nav"
+    >
+      <div class="container">
+        <a href="#home" class="navbar-brand">
+          <img
+            src="images/logo2.jpeg"
+            width="60"
+            height="30"
+            alt=""
+            id="logo"
+          />
+          <h3 class="d-inline align-middle">ABZ Construction</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#showcase" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#authors" class="nav-link">Meet The Founders</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--SLIDER -->
+    <section id="slider">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-image-1 active"></div>
+
+          <div class="carousel-item carousel-image-2"></div>
+
+          <div class="carousel-item carousel-image-3"></div>
+        </div>
+
+        <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section id="showcase" class="py-5">
+      <div class="primary-overlay text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h1 class="display-5 mt-3 pt-3">
+                What Abz Construction Company ?
+              </h1>
+              <p class="lead">
+                The Founder of Zahra Construction S.A.R.L Company that is
+                specialized by the construction work and contracting and
+                established by: Omar Zahra And Amer Zahra And Kifah Zahra and
+                well recognized in the real estate mean for decades and
+                stipulated to erect a number of farcy buildings with hight
+                standards in the city of tripoli and Lebanon as well as many
+                other projects established out of Lebanon,including Syria,among
+                Them,<span id="dots">...</span
+                ><span id="more">
+                  Damascus University that has participated in its erection In
+                  Addition to many projects in several cities in Saudi Arabia ,
+                  for Example Jeddah ,Riyadh ,Tabuk and Khobar the Company
+                  mentioned above is established at the beginning of year 1965,
+                  and in the next year the founders of Zahra Construction
+                  Company are going to Celebrate their 50 years of working in
+                  the field of Building contracting and establishing projects.
+                  the Founders of Zahra Construction S.A.R.L company witch is
+                  Registered at the commercial register of the court of the
+                  first instance of north Lebanon nb ' ',are Characterized by
+                  the distinction in the Finishing of submition date ,dedication
+                  and distinction in the finishing work, in addition to the
+                  great quality and the high standards of the raw materials used
+                  in their work and that's what built a strong trust between
+                  them and their agents and promoted the standard of the work
+                  they manage and accomplish
+                </span>
+              </p>
+              <button
+                id="readMoreBtn"
+                onclick="readMore()"
+                class="btn btn-outline-secondary btn-lg text-white"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--HOME ICON SECTION  -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 text-center">
+            <img
+              src="images/ServicesImages/drafting-compass-solid.svg"
+              alt=""
+              height="80"
+              width="80"
+            />
+            <h3>Construction Work and Engineering</h3>
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+            <img
+              src="images/ServicesImages/bolt-solid.svg"
+              alt=""
+              height="80"
+              width="80"
+            />
+            <h3>Internal and External Electric Work</h3>
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+            <img
+              src="images/ServicesImages/hand-holding-water-solid.svg"
+              alt=""
+              height="80"
+              width="80"
+            />
+            <h3>Sanitary work/Internal And External Installation</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4 text-center">
+            <img
+              src="images/ServicesImages/heater.svg"
+              alt=""
+              height="80"
+              width="80"
+            />
+            <h3>Heater Installation</h3>
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+            <img
+              src="images/ServicesImages/brush-solid.svg"
+              alt=""
+              height="80"
+              width="80"
+            />
+            <h3>PaintWork</h3>
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+            <img
+              src="images/ServicesImages/solar-panel-solid.svg"
+              alt=""
+              height="80"
+              width="80"
+            />
+            <h3>Solar System Installation</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h1 class="text-center">Photo Gallery</h1>
+        <p class="text-center">Check out our photos</p>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a
+              href="images/OurWorkImages/image101.jpg"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="560"
+              data-width="560"
+            >
+              <img
+                src="images/OurWorkImages/image101.jpg"
+                alt=""
+                class="img-fluid"
+                height="560"
+              />print
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="images/OurWorkImages/image102.jpg"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="561"
+              data-width="561"
+            >
+              <img
+                src="images/OurWorkImages/image102.jpg"
+                alt=""
+                class="img-fluid"
+                height="560"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="images/OurWorkImages/image103.jpg"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="562"
+              data-width="562"
+            >
+              <img
+                src="images/OurWorkImages/image103.jpg"
+                alt=""
+                class="img-fluid"
+                height="560"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a
+              href="images/OurWorkImages/image104.jpg"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="563"
+              data-width="563"
+            >
+              <img
+                src="images/OurWorkImages/image104.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="images/OurWorkImages/image105.jpg"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="564"
+              data-width="564"
+            >
+              <img
+                src="images/OurWorkImages/image105.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="images/OurWorkImages/image106.jpg"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="565"
+              data-width="565"
+            >
+              <img
+                src="images/OurWorkImages/image106.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- AUTHORS -->
+    <section id="authors" class="my-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="info-header mb-5">
+              <h1 class="text-primary pb-3">
+                Meet The Founders
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  style="height: 150px; width: 100px;"
+                  src="images/AboutUsImages/about6.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-50 mb-3"
+                />
+                <h3>Mr.Omar Zahra</h3>
+                <p>
+                  the company founder and has more than 60 years of experience
+                  in the construction and contraction field inside and outside
+                  of Lebanon and outside this field.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  style="height: 150px; width: 100px;"
+                  src="images/AboutUsImages/about7.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-50 mb-3"
+                />
+                <h3>Mr.Marwan Zahra</h3>
+                <p>
+                  the company founder and has more than 60 years of experience
+                  in the construction and contraction field inside and outside
+                  of Lebanon and outside this field
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  style="height: 150px; width: 100px;"
+                  src="images/AboutUsImages/about8.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-50 mb-3"
+                />
+                <h3>Mr.Amer zahra</h3>
+                <p>
+                  The Company operation manager and has more than 35 years of
+                  experience in the construction and contraction field and
+                  execution of hundred of projects and he is also the public
+                  relation officer of the company
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  style="height: 150px; width: 100px;"
+                  src="images/AboutUsImages/about4.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle w-50 mb-3"
+                />
+                <h3>Mr.Kifah Zahra</h3>
+                <p>
+                  The company director-general inside and outside Lebanon,and
+                  has more than 20 years of experience in this field
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h3>Send Message</h3>
+            <form>
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Email" />
+              </div>
+
+              <div class="input-group input-group-lg mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-pencil-alt"></i>
+                  </span>
+                </div>
+                <textarea
+                  class="form-control"
+                  placeholder="Message"
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                value="Submit"
+                class="btn btn-primary btn-block btn-lg"
+              />
+            </form>
+          </div>
+
+          <div class="col-lg-3 align-self-center">
+            <img src="img/mlogo.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+<footer id="main-footer" class="page-footer font-small mdb-color lighten-3 pt-4 text-white bg-primary">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> Lebanon-Tripoli-Motran Street-Sahet AlKayyal</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> Lebanon-Tripoli-Jemmayzat Street </p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> Sunshine Building 1st floor,office No #109,AL garhoud Area,Deira opp.Al Tayer Showroom Dubai United Arab Emirates P.O box:33836 Dubai</p>
+          </li>
+        </ul>
+
+      </div>
+    
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Phone Number</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 961 71 11 02 22</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 961 03 46 50 93</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 971 42 72 62 02</p>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Phone Number</h5>
+
+        <ul class="list-unstyled">
+        <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> abz.zahra@outlook.com</p>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+    <script>
+      function readMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("readMoreBtn");
+        var showCaseDiv = document.getElementById("showcase");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+          showCaseDiv.style.minHeight = "400px";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+          showCaseDiv.style.minHeight = "600px";
+        }
+      }
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+         // Init Scrollspy
+          $('body').scrollspy({ target: '#main-nav' });
+
+      // Smooth Scrolling
+      $("#main-nav a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          const hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            window.location.hash = hash;
+          });
+        }
+      });
+
+      // Configure Slider
+      $(".carousel").carousel({
+        interval: 6000,
+        pause: "hover",
+      });
+
+      // Lightbox Init
+      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
+  </body>
+</html>
