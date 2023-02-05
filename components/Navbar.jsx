@@ -1,75 +1,43 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import React, { useState } from 'react';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const handleNav = () => {
-    setNav(!nav);
-  };
-
   return (
-    <div
-      style={{ backgroundColor: 'white' }}
-      className='relative left-0 top-0 w-full z-10 ease-in duration-300'
-    >
-      <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
-        <Link href='/'>
-          <h1 style={{ color: 'black' }} className='font-bold text-4xl'>
-            Captur
-          </h1>
-        </Link>
-        <ul style={{ color: 'black' }} className='hidden sm:flex'>
-          <li className='p-4'>
-            <Link href='/'>Home</Link>
-          </li>
-          <li className='p-4'>
-            <Link href='/#gallery'>About Us</Link>
-          </li>
-          <li className='p-4'>
-            <Link href='/work'>Matches</Link>
-          </li>
-          <li className='p-4'>
-            <Link href='/contact'>Academy Program</Link>
-          </li>
-          <li className='p-4'>
-            <Link href='/contact'>Contact Us</Link>
-          </li>
-        </ul>
 
-        {/* Mobile Button */}
-        <div onClick={handleNav} className='block sm:hidden z-10'>
-          {nav ? (
-            <AiOutlineClose size={20} style={{ color: 'black' }} />
-          ) : (
-            <AiOutlineMenu size={20} style={{ color: 'black' }} />
-          )}
-        </div>
-        {/* Mobile Menu */}
-        <div
-          className={
-            nav
-              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
-              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
-          }
-        >
-          <ul>
-            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/'>Home</Link>
+    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+      <div className="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="#home" className="flex items-center">
+          <Image width={100} height={60} src="/images/ABZ_LOGO.png" className="h-6 mr-3 sm:h-9" alt="ABZ Construction Logo" />
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">ABZ Construction</span>
+        </a>
+        <button onClick={() => { setNav(!nav) }} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span className="sr-only">Open main menu</span>
+          <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
+        </button>
+        <div className={`${!nav ? 'hidden' : ''} w-full md:block md:w-auto`} id="navbar-default">
+          <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <Link className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page" href='/#home'>Home</Link>
             </li>
-            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/#gallery'>Gallery</Link>
+            <li>
+              <Link className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href='/#home'>About Us</Link>
             </li>
-            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/work'>Work</Link>
+            <li>
+              <Link className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href='/#home'>Services</Link>
             </li>
-            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/contact'>Contact</Link>
+            <li>
+              <Link className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href='/#home'>Meet The Founders</Link>
+            </li>
+            <li>
+              <Link className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href='/#home'>Contact</Link>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
+
   );
 };
 
